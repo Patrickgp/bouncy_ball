@@ -2,7 +2,7 @@ use macroquad::prelude::*;
 use crate::ball::{Ball};
 
 pub fn apply_gravity(ball: &mut Ball, dt: f32) { // dt is the delta time
-    ball.velocity.y += 200.0 * dt; // Gravity acceleration
+    ball.velocity.y += 980.0 * dt; // Gravity acceleration
 }
 
 pub fn handle_floor_collision(ball:&mut Ball) {

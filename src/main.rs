@@ -19,6 +19,14 @@ async fn main() {
     loop {
         let dt = get_frame_time();
 
+        if is_key_pressed(KeyCode::Escape) {
+            break;
+        }
+
+        if is_key_pressed(KeyCode::Space) {
+            sim.reset();
+        }
+
         if is_mouse_button_pressed(MouseButton::Left) {
             drag_start = Some(mouse_position().into());
         }
